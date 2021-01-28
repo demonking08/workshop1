@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sample title </title>
+    <link rel="icon" href="ninja.svg" />
+    <style>
+        .Parent{
+            align-items: center;
+            flex-wrap: wrap;
+            display: flex ; 
+            flex-direction: row;
+            justify-content: center;
+       }
+
+        .child{
+            background: chocolate;
+           border: 1px solid green(3,123,145);
+           font-size: 40px;
+           padding: 1%;
+           margin: 1%;
+           width: 20%;
+           justify-content: space-between;
+       }
+       /* small scale devices */
+       @media only screen and (min-width: px;) and (max-width: 480px;){
+            .child{
+                width: 40%;
+                font-size: 20px;
+                background: green;
+                border: 1px solid #000;
+                border-radius: 10px;
+                box-shadow: 3px 3px 3px red(170,46,46);
+            }
+       /* medium scale devices */
+       @media only screen and (min-width: 489px) and (max-width: 720px){
+            .child{
+                width: 40%;
+                font-size: 20px;
+                background: yellow;
+                border: 1px solid #000;
+                border-radius: 10px;
+                box-shadow: 3px 3px 3px red(170,46,46);
+       /* large scale devices */
+       @media only screen and (min-width: 768px) and (max-width: 1024px){
+            .child{
+                width: 40%;
+                font-size: 20px;
+                background: #red ;
+                border: 1px solid #000;
+                border-radius: 10px;
+                box-shadow: 3px 3px 3px red(170,46,46);
+            }
+
+       }
+
+    </style>
+</head>
+<body>
+    <section class=" Parent ">
+        <article class="child"> USA </article>
+        <article class="child"> CANADA </article>   
+        <article class="child"> UNITEDSTATES </article>
+        <article class="child"> germany </article>
+
+    </section>
+</body>       
+</html>
